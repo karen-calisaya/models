@@ -1,4 +1,4 @@
-module.exports = (sequelize, DataTypes) =>{
+module.exports = (sequelize, dataTypes) =>{
     let alias = "genre";
     let cols = {
         id: {
@@ -27,7 +27,7 @@ module.exports = (sequelize, DataTypes) =>{
         deletedAt: false,
     };
 
-    const Genre = sequelize.defined(alias, cols, config);
+    const Genre = sequelize.define(alias, cols, config);
     return Genre;
 
 }

@@ -1,9 +1,9 @@
-module.exports = (sequelize, DataTypes) =>{
+module.exports = (sequelize, dataTypes) =>{
     let alias = "Movie"; /* Mismo nombre de archivo */
     let cols = {
         id: {
             type: dataTypes.INTEGER(10).UNSIGNED,
-            primaeryKey: true,
+            primaryKey: true,
             autoIncrement: true,
             allowNull: false,
         },
@@ -33,7 +33,7 @@ module.exports = (sequelize, DataTypes) =>{
     };
     let config = {
         tableName: "movies", /* se hace por defecto, pero por las dudas lo agregamos */
-        createAt: "created_at", /* configurar para q me traiga el dato como le expreso */
+        createdAt: "created_at", /* configurar para q me traiga el dato como le expreso */
         updatedAt: "updated_at",
         deletedAt: false,
         /* timestamps : false, ponemos esto en caso de q no tenga los timestamps*/
