@@ -16,7 +16,7 @@ module.exports = (sequelize, dataTypes) =>{
             allowNull: false,
         },
         active: {
-            type: dataTypes.BOOLEAN, /* ojo */
+            type: dataTypes.BOOLEAN, /* tinyint */
             allowNull: false,
         }
     };
